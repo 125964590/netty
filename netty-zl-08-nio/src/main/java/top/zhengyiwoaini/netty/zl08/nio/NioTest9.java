@@ -12,6 +12,14 @@ import java.util.Iterator;
 import java.util.Set;
 
 /**
+ * Selector 选择器
+ *
+ * <p>选择器内部实际上维护了多个key set 通过{@link SelectionKey}来记录相关的操作,我们所要做的就是不断地遍历{@code Select}然后处理相关的操作即可
+ *
+ * <p>选择器是NIO中的一起重要组件,这点细节需要去关注NIO的网络模型.
+ *
+ * <p>在这个例子里展示了如何使用一个线程的{@code Selector}来完成连接处理.
+ *
  * @author jbzm
  * @date 2019-10-31 11:27
  */

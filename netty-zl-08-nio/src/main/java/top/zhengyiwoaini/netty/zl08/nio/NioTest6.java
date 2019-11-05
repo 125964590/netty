@@ -6,6 +6,9 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
 /**
+ * 特殊的例子(操作{@code ByteBuffer}之前不适用{@link ByteBuffer#clear()}方法)
+ *
+ * <p>在对块空间进行操作的时候需要记得调用{@link ByteBuffer}函数
  *
  * @author jbzm
  * @date 2019-10-28 16:05

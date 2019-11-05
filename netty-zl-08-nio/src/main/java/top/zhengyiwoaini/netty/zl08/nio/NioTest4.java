@@ -2,10 +2,15 @@ package top.zhengyiwoaini.netty.zl08.nio;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.nio.Buffer;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
 /**
+ * Buffer#clear()方法测试
+ *
+ * <p>{@link Buffer#clear()}这个可以将position/limit/capacity全部重置
+ *
  * @author jbzm
  * @date 2019-10-25 17:43
  */
@@ -18,7 +23,7 @@ public class NioTest4 {
     ByteBuffer byteBuffer = ByteBuffer.allocate(300);
     while (true) {
       byteBuffer.clear();
-      //当无法读取数据时会返回-1,
+      // 当无法读取数据时会返回-1,
       int read = inputChannel.read(byteBuffer);
       if (read == -1) {
         break;

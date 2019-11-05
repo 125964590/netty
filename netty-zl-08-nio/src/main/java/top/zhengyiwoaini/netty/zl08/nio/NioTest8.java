@@ -11,6 +11,8 @@ import java.util.Arrays;
 /**
  * 关于Buffer的Scattering与Gathering Scattering与Gathering会分别读取多个Buffer
  *
+ * <p>这个例子是为了告诉我们在可以开辟多个{@code Buffer}对数据进行存储
+ *
  * @author jbzm
  * @date 2019-10-28 17:24
  */

@@ -5,6 +5,9 @@ import java.nio.ByteBuffer;
 /**
  * Slice Buffer
  *
+ * <p>{@link ByteBuffer#slice()}这个方法可以把当前的byteBuffer切分成一个新的{@code
+ * ByteBuffer}但是不会开辟新的存储空间,也就是说对于存储的数据而言底层两个对象使用的是同样的存储空间. 但是对于position/limit/capacity的管理是各自维护的
+ *
  * @author jbzm
  * @date 2019-10-25 18:19
  */
