@@ -20,6 +20,7 @@
         <module>netty-zl-06-protobuf</module>
         <module>netty-zl-07-grpc</module>
         <module>netty-zl-08-nio</module>
+        <module>netty-zl-09-zero-copy</module>
     </modules>
 
     <dependencies>
